@@ -688,9 +688,9 @@ footer.bg-dark li,
   -moz-transition: all 0.3s ease;
   opacity: 0;
 }
-.background-image-holder img {
+/*.background-image-holder img {
   display: none;
-}
+}*/
 .background-multiply .background-image-holder {
   background-color: #47b475 !important;
   background-blend-mode: multiply;
@@ -914,7 +914,6 @@ nav .btn,
   max-height: 60%;
 }
 .logo-light {
-  display: none;
 }
 nav.nav-centered .logo {
   max-height: 64px;
@@ -924,7 +923,6 @@ nav.bg-dark .logo-light {
   display: inline;
 }
 nav.bg-dark .logo-dark {
-  display: none;
 }
 .has-dropdown {
   padding-right: 18px;
@@ -2511,8 +2509,9 @@ button[type="submit"] .form-loading {
 }
 /*!---------- 15. STATS ----------*/
 .stat-2 h1 {
-  font-size: 80px;
-  line-height: 88px;
+  font-size: 90px;
+  line-height: 98px;
+  color: #ffffff !important;
 }
 .stat-3 h1 {
   margin-bottom: 8px;
@@ -3844,7 +3843,6 @@ iframe {
   background: #222;
 }
 .vid-bg .background-image-holder {
-  display: none;
   z-index: 0;
 }
 .vid-bg .masonry-loader {

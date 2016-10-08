@@ -47,3 +47,5 @@ MENTOR APP
 
 
 gem 'aws-sdk', '~> 2.3' deleted incompatible with paperclip
+
+tyler.nappy@hpe.com
