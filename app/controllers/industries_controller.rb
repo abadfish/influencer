@@ -12,6 +12,11 @@ class IndustriesController < ApplicationController
     @industry = Industry.create(industry_params)
   end
 
+  def show
+    @industry = Industry.find(params[:format])
+    @mentors = User.where(industry: @industry, role: 1)
+  end
+
   private
 
   def industry_params

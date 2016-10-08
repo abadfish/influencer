@@ -1,2 +1,5 @@
 module IndustryHelper
+
+
+
 end
