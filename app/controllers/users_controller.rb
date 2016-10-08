@@ -4,14 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  def create
-    @user = User.new
-    if @user.save
-      redirect_to edit_user_registration_path
-    else
-      render 'new'
-    end
-  end
+
 
   def update
     @user = User.find(params[:id])
@@ -29,6 +22,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:role)
+    params.require(:user).permit(:role, :industry, :concentration, :expertise, :zipcode)
   end
 end
