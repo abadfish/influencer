@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
   resource :industry
 
-  resource :users, only: [:index, :create, :edit, :update]
-  
+  resource :users, only: [:index, :show, :create, :edit, :update]
+
 
 
 
