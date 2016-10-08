@@ -30,6 +30,7 @@ gem 'devise'
 gem 'pundit'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin-oauth2'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

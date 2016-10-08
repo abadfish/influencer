@@ -6,7 +6,7 @@ MENTOR APP
 2. What features do we need to implement?
    * Authentication (devise) -> send emails
    * upload profile picture (peperclip)
-   * Omniauth (linkedin & Facebook)
+   * Omniauth (linkedin & ✓ Facebook)
    * Roles: Mentors and mentees (pundit)
    * Messaging between users (mailboxer)
    * search for mentors by zipcode -> user need to have a zipcode arg (geocoder or geokit-rails)
