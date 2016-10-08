@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'bootstrap-sass'
-gem 'bootstrap-form'
+gem 'bootstrap_form'
+gem "font-awesome-rails"
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 
@@ -14,7 +15,6 @@ gem 'active_model_serializers'
 
 gem 'carrierwave'
 gem 'paperclip', '>= 5.0.0'
-gem 'aws-sdk', '~> 2.3'
 
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -39,7 +39,7 @@ gem 'omniauth-facebook'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :development do
