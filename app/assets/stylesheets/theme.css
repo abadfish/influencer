@@ -2511,12 +2511,12 @@ button[type="submit"] .form-loading {
 .stat-2 h1 {
   font-size: 90px;
   line-height: 98px;
-  color: #ffffff !important;
 }
 .stat-3 h1 {
   margin-bottom: 8px;
   font-size: 72px;
   line-height: 80px;
+  color: #4F4F4F !important;
 }
 .stat-3 h6 {
   margin-bottom: 0;
