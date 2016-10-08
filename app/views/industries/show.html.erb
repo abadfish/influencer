@@ -1,0 +1,11 @@
+<h1> <%= @industry.name %></h1>
+
+<h2> Mentors in this industry:</h2>
+
+<% @mentors.each do |mentor| %>
+  <ul>
+    <li>
+      <%= link_to mentor.email, user_path(mentor) %>
+    </li>
+  </ul>
+<% end %>
