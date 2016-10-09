@@ -4,9 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
+gem 'bootstrap-will_paginate'
+gem 'will_paginate', '~> 3.1.0'
 gem "font-awesome-rails"
 gem 'sqlite3'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
+gem 'chosen-rails'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'figaro'
