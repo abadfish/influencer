@@ -6,6 +6,10 @@
           </div>
       </div>
       <div class="col-md-6 col-md-offset-1 content">
+        <div class="actions">
+          <h2><%= link_to "Inbox", conversations_path %></h2><br />
+        </div>
+
           <h4 class="uppercase">Personal Info</h4>
           <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
@@ -63,6 +67,7 @@
                       <td><%= u.industry.name %></td>
                       <td><%= u.concentration %></td>
                       <td><%= u.email %></td>
+
                     <% end %>
                   </tr>
 
