@@ -1,24 +1,26 @@
-<%= link_to (fa_icon 'envelope').to_s + ' Back', conversations_path%>
-<h1>Start Conversation</h1>
+<div class="col-sm-6">
+  <%= link_to (fa_icon 'envelope').to_s + ' Back', conversations_path%>
+  <h1>Start Conversation <%= fa_icon 'pencil'%></h1>
 
-<%= form_tag messages_path, method: :post do %>
-  <div class="form-group">
-    <%= label_tag 'message[subject]', 'Subject' %>
-    <%= text_field_tag 'message[subject]', nil, class: 'form-control', required: true %>
-  </div>
+  <%= form_tag messages_path, method: :post do %>
+    <div class="form-group">
+      <%= label_tag 'message[subject]', 'Subject' %>
+      <%= text_field_tag 'message[subject]', nil, class: 'form-control', required: true %>
+    </div>
 
-  <div class="form-group">
-    <%= label_tag 'message[body]', 'Message' %>
-    <%= text_area_tag 'message[body]', nil, cols: 3, class: 'form-control', required: true %>
-  </div>
+    <div class="form-group">
+      <%= label_tag 'message[body]', 'Message' %>
+      <%= text_area_tag 'message[body]', nil, cols: 3, rows: 5, class: 'form-control', required: true %>
+    </div>
 
-  <div class="form-group">
-    <%= label_tag 'recipients', 'Choose recipients' %>
-    <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it' %>
-  </div>
+    <div class="form-group">
+      <%= label_tag 'recipients', 'Choose recipients' %>
+      <%= select_tag 'recipients', recipients_options(@chosen_recipient), multiple: true, class: 'form-control chosen-it' %>
+    </div>
 
-  <%= submit_tag 'Send', class: 'btn btn-primary' %>
-<% end %>
+    <%= submit_tag 'Send', class: 'btn btn-primary' %>
+  <% end %>
+</div>
 
 <script type="text/javascript">
   $(document).ready(function(){
