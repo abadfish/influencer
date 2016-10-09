@@ -17,12 +17,27 @@ class User < ActiveRecord::Base
     end
   end
 
-  def match_with_mentor
-    @users.map do |user|
-      user.role
+  # def match_with_mentor
+  #   @users.map do |user|
+  #     user.role
+  #
+  #   end
+  # end
 
+  def mentors
+    if @user.role == "mentee"
+      @users.collect do |u|
+        if u.role == "mentor"
+          u
+        end
+      end
+    else
+      puts "are you looking for mentees?"
     end
   end
+
+
+
 
 
 
