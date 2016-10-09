@@ -12,6 +12,8 @@
                   data: {confirm: 'Are you sure you want to delete this?'} %>
         <% if conversation.is_unread?(current_user) %>
           <%= link_to 'Mark as read', mark_as_read_conversation_path(conversation), class: 'btn btn-xs btn-info', method: :post %>
+        <% else %>
+
         <% end %>
     <% end %>
   </div>

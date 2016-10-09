@@ -21,7 +21,14 @@
 
         <!-- Show if user is signed in -->
         <% elsif user_signed_in? %>
-          <li><%= link_to (fa_icon 'envelope').to_s + ' Inbox', conversations_path %></li>
+          <li>
+            <%= link_to conversations_path do %>
+            <%= (fa_icon 'envelope').to_s + ' Inbox' %>
+              <% if notifications_count(current_user).to_i > 0 %>
+                <span class="badge notifications"><%= notifications_count(current_user) %></span>
+              <% end %>
+            <% end %>
+          </li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 
         <li class="dropdown">

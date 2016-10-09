@@ -20,7 +20,7 @@
  @import "bootstrap";
  @import 'bootstrap/theme';
  @import 'chosen';
- 
+
  @import 'https://fonts.googleapis.com/css?family=Lato';
 
 
@@ -46,8 +46,18 @@ body {
 }
 
 .messages {
-  max-height: 400px;
+  max-height: 300px;
   overflow-y: auto;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+.sended_at {
+  font-size: 11px;
+  color: #abb0b5;
+  font-style: italic;
+}
+
+.notifications {
+  background-color: red;
 }

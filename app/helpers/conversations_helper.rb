@@ -9,4 +9,8 @@ module ConversationsHelper
     opts[:class] += ' active' if title.downcase == current_box
     content_tag :li, link_to(title.capitalize, conversations_path(box: title.downcase)), opts
   end
+
+  def notifications_count(user)
+    user.mailbox.conversations.all.select {|c| c.is_unread?(user)}.size.to_s
+  end
 end
