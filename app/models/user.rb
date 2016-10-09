@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   belongs_to :industry
+  acts_as_messageable
 
   enum role: [:admin, :mentor, :mentee]
   # Include default devise modules. Others available are:
@@ -36,9 +37,14 @@ class User < ActiveRecord::Base
     end
   end
 
+  ## Messenger ##
 
+  def name
+    self.email
+  end
 
-
-
-
+  def mailboxer_email(object)
+    email
+  end
+  
 end

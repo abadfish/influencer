@@ -13,8 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "font-awesome";
+ @import 'chosen';
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import 'bootstrap/theme';
  @import 'https://fonts.googleapis.com/css?family=Lato';
 
 
