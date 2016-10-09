@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161008183440) do
+ActiveRecord::Schema.define(version: 20161009013315) do
 
   create_table "industries", force: :cascade do |t|
     t.string "name"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20161008183440) do
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.integer  "role",                   default: 2
-    t.string   "industry"
+    t.integer  "industry_id"
     t.string   "concentration"
     t.string   "expertise"
     t.integer  "zipcode"

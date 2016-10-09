@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-
+  belongs_to :industry
+  
   enum role: [:admin, :mentor, :mentee]
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
