@@ -53,7 +53,7 @@ body.boxed-layout {
   background: #eee;
 }
 body.boxed-layout .main-container {
-  background: #fff;
+
 }
 body.boxed-layout,
 .boxed-layout .nav-container,
@@ -5208,7 +5208,6 @@ footer.bg-dark a {
   padding-top: 180px;
 }
 .pt240 {
-  padding-top: 240px;
 }
 .pb0 {
   padding-bottom: 0;
@@ -5265,7 +5264,7 @@ footer.bg-dark a {
   padding-bottom: 180px;
 }
 .pb240 {
-  padding-bottom: 240px;
+
 }
 @media all and (max-width: 990px) {
   .mb-s-0 {
@@ -5707,4 +5706,24 @@ footer.bg-dark a {
   .pb-xs-240 {
     padding-bottom: 240px !important;
   }
+}
+
+h1.banner-text {
+    font-size: 50pt;
+}
+
+.mentor-name {
+    color: white
+}
+
+.industry-header {
+    color: white;
+}
+
+.industry-container {
+    padding-left: 5%;
+}
+
+.industry-list {
+    font-size: 1.5em;
 }

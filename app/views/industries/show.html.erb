@@ -1,6 +1,45 @@
-<h1> <%= @industry.name %></h1>
+<div class="industry-container">
+    <h1 class="industry-header"> <%= @industry.name %></h1>
+</div>
 
-<h2> Mentors in this industry:</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+<div class="row">
+        <div class="col s6">
+             <h2 class="mentor-name">Mentor Name</h2>
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img class="activator" src="http://lorempixel.com/100/190/nature/6">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>My Work Exprience</p>
+                      <p>What I can help with</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">USE THIS TO MESSAGE</a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col s6">
+             <h2 class="mentor-name">Mentor Name</h2>
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img class="activator" src="http://lorempixel.com/100/190/nature/6">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>My Work Exprience</p>
+                      <p>What I can help with</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">USE THIS TO MESSAGE</a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
 
 <% @mentors.each do |mentor| %>
   <ul>
