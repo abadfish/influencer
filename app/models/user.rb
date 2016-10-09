@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   belongs_to :industry
-  
+
   enum role: [:admin, :mentor, :mentee]
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -17,6 +17,13 @@ class User < ActiveRecord::Base
     end
   end
 
-  
+  def match_with_mentor
+    @users.map do |user|
+      user.role
+
+    end
+  end
+
+
 
 end
