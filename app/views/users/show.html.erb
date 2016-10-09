@@ -1,7 +1,72 @@
 <div class="col-md-12">
-  <p class="name">First Name: <%= @user.first_name %> Last Name: <%= @user.last_name %></p>
+  <section class="image-square left">
+      <div class="col-md-6">
+          <div class="background-image-holder">
+              <%= image_tag @user.avatar.url(:medium) %>
+          </div>
+      </div>
+      <div class="col-md-6 col-md-offset-1 content">
+          <h4 class="uppercase">Personal Info</h4>
+          <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+          </p>
+          <hr>
+          <p>
 
-  <p class="name"><%= @user.email  %></p>
-  <%= image_tag @user.avatar.url(:thumb) %>
-
+          </p>
+          <p>
+              <strong>E:</strong> <%= @user.email %>
+              <br />
+              <strong>P:</strong>
+              <br />
+          </p>
+      </div>
+  </section>
 </div>
+
+<div class="main-container">
+            <section class="page-title page-title-4 bg-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Available Mentors</h1>
+                        </div>
+
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+            <section >
+                <div class="col-md-12">
+
+
+                <table>
+                  <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Industry</th>
+                    <th>Concentration</th>
+                    <th>Email</th>
+                  </tr>
+
+
+
+                  <% @users.each.with_index(1) do |u, i| %>
+                  <tr>
+                    <% if u.role == "mentor"%>
+                      <td><%= i %>. </td>
+                      <td><%= u.first_name %></td>
+                      <td><%= u.last_name %></td>
+                      <td><%= u.industry.name %></td>
+                      <td><%= u.concentration %></td>
+                      <td><%= u.email %></td>
+                    <% end %>
+                  </tr>
+
+                  <% end %>
+                  </table>
+                  </div>
+            </section>

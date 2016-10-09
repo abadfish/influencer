@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:format])
-
+    @users = User.all
   end
 
 
