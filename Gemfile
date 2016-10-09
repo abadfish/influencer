@@ -6,6 +6,10 @@ gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-will_paginate'
+gem 'will_paginate', '~> 3.1.0'
+gem 'chosen-rails'
+gem 'jquery-turbolinks'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'figaro'

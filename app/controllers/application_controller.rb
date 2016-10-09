@@ -8,4 +8,16 @@ class ApplicationController < ActionController::Base
     request.env['omniauth.origin'] || root_path
   end
 
+  # Rescues when no record is found
+  # redirect user back with a warning message
+  # If the referer field is not set redirect to root_path
+  rescue_from ActiveRecord::RecordNotFound do
+    flash[:warning] = 'Resource not found.'
+    redirect_back_or root_path
+  end
+
+  def redirect_back_or(path)
+    redirect_to request.referer || path
+  end
+
 end
