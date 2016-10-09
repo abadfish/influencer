@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'bootstrap-sass'
-gem 'bootstrap_form'
 gem "font-awesome-rails"
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'

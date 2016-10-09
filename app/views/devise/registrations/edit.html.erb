@@ -9,7 +9,7 @@
 
         <div class="field">
           <%= f.label :role %><br />
-          <%= f.select(:role, options_for_select([["mentor", "mentor"], ["mentee", "mentee"]])) %><br /><br />
+          <%= f.select(:role, options_for_select([["Mentor", "Mentor"], ["Mentee", "Mentee"]])) %><br /><br />
         </div>
 
         <div class="field">
@@ -39,12 +39,7 @@
 
         <div class="field">
           <%= f.label :industry %><br />
-            <%= f.text_field :industry, list: "tags_autocomplete" %>
-              <datalist id="tags_autocomplete">
-              <%= Industry.all.each do |industry| %>
-                <option value="<%= industry.name %>">
-              <% end %>
-              </datalist><br />
+            <%= f.select(:industry, options_for_select([["Tech", "Tech"], ["Finance", "Finance"], ["Healthcare", "Healthcare"], ["Creative", "Creative"]])) %>
         </div>
 
         <div class="field">
